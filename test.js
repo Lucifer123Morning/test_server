@@ -4,7 +4,6 @@ let requestCount = 0;
 
 const server = http.createServer((request, response) => {
     if (request.url === '/favicon.ico') {
-        // Відповідаємо на запит favicon.ico, щоб уникнути збільшення лічильника запитів
         response.writeHead(204); // 204 No Content
         response.end();
         return;
